@@ -1,0 +1,13 @@
+C:\Users\verti\RiderProjects\Core\Core\bin\Debug\Core.exe.config
+C:\Users\verti\RiderProjects\Core\Core\bin\Debug\Core.exe
+C:\Users\verti\RiderProjects\Core\Core\bin\Debug\Core.pdb
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.Properties.Resources.resources
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.csproj.GenerateResource.cache
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.exe
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.pdb
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.Form1.resources
+C:\Users\verti\RiderProjects\Core\Core\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\verti\RiderProjects\Core\Core\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\verti\RiderProjects\Core\Core\obj\Debug\Core.csproj.CopyComplete
