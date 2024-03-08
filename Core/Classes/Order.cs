@@ -34,13 +34,10 @@ namespace Core.Classes
             set => record_date = value;
         }
 
-        public Order(int id, int clientId, string mark, int number, DateTime recordDate)
+        public Order(string mark, int number)
         {
-            this.id = id;
-            client_id = clientId;
             this.mark = mark;
             this.number = number;
-            record_date = recordDate;
         }
 
         public Order()

@@ -52,10 +52,10 @@
     <ItemGroup>
         <Compile Include="Classes\Category.cs" />
         <Compile Include="Classes\Client.cs" />
-        <Compile Include="Classes\ClientOrdersDAO.cs" />
         <Compile Include="Classes\ConfigurationFileManagement.cs" />
+        <Compile Include="Classes\DAOs\ClientOrdersDAO.cs" />
+        <Compile Include="Classes\DAOs\InsertIntoDatabaseDAO.cs" />
         <Compile Include="Classes\DatabaseSingleton.cs" />
-        <Compile Include="Classes\InsertIntoDatabaseDAO.cs" />
         <Compile Include="Classes\Order.cs" />
         <Compile Include="Classes\OrderItem.cs" />
         <Compile Include="Classes\Product.cs" />

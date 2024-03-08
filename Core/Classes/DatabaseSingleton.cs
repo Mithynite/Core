@@ -20,12 +20,14 @@ namespace Core.Classes
         {
             if (connection == null)
             {
-                SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder();
-                connStringBuilder.UserID = ReadSetting("Name");
-                connStringBuilder.Password = ReadSetting("Password");
-                connStringBuilder.InitialCatalog = ReadSetting("Database");
-                connStringBuilder.DataSource = ReadSetting("DataSource");
-                connStringBuilder.ConnectTimeout = 30;
+                SqlConnectionStringBuilder connStringBuilder = new SqlConnectionStringBuilder()
+                {
+                    UserID = ReadSetting("Name"),
+                    Password = ReadSetting("Password"),
+                    InitialCatalog = ReadSetting("Database"),
+                    DataSource = ReadSetting("DataSource"),
+                    ConnectTimeout = 30
+                };
                 connection = new SqlConnection(connStringBuilder.ConnectionString);
                 connection.Open();
 
