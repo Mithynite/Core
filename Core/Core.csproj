@@ -54,7 +54,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Classes\ConfigurationFileManagement.cs" />
-        <Compile Include="Classes\DAOs\ClientOrdersDAO.cs" />
+        <Compile Include="Classes\DAOs\SeeDataDAO.cs" />
         <Compile Include="Classes\DAOs\DAO.cs" />
         <Compile Include="Classes\DAOs\EditDatabaseDAO.cs" />
         <Compile Include="Classes\DAOs\InsertIntoDatabaseDAO.cs" />
@@ -100,6 +100,9 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="App.config"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="README.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

@@ -5,7 +5,11 @@ namespace Core.Classes
 {
     public class EditDatabaseDAO : DAO
     {
-        public string EditClient(string currentUsername, Client client)
+        /*
+         * Třída EditDatabaseDAO slouží k úpravě dat v databázi, to je asi tak vše
+         */
+        
+        public string EditClient(string currentUsername, Client client) // Metoda, která upraví všechny atributy určitého klienta
         {
             using (SqlCommand cmd = new SqlCommand("UPDATE Client SET username = @username, email = @email WHERE username = @currentUsername", _connection))
             {

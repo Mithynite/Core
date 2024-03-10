@@ -4,10 +4,13 @@ using System.Data.SqlClient;
 
 namespace Core.Classes.DAOs
 {
-    public class ClientOrdersDAO : DAO
+    public class SeeDataDAO : DAO
     {
+        /*
+         * Tato třída vypisuje data z databáze uživateli
+         */
         
-        public IEnumerable<Order> GetByOrdersOfClient(string username)
+        public IEnumerable<Order> GetByOrdersOfClient(string username) //Metoda pro vypsání všech objednávek jistého uživatele
         {
 
             using (SqlCommand command = new SqlCommand("SELECT * FROM Order_ WHERE client_id in(SELECT id FROM Client WHERE username = @username)", _connection))
@@ -20,7 +23,6 @@ namespace Core.Classes.DAOs
                     {
                         Order order = new Order()
                         {
-                            //Id = reader.GetInt32();
                             Id = Convert.ToInt32(reader[0].ToString()),
                             ClientId = Convert.ToInt32(reader[1].ToString()),
                             Number = Convert.ToInt32(reader[2].ToString()),
@@ -58,33 +60,6 @@ namespace Core.Classes.DAOs
                 reader.Close();
             }
         }
-
-        /*
-         public string PrintExampleData()
-         {
-             string sql = "select * from Order_";
-             using (SqlCommand command = new SqlCommand(sql, _connection))
-             {
-
-                 SqlDataReader reader = command.ExecuteReader();
-
-                 while (reader.Read())
-                 {
-                     Order order = new Order()
-                     {
-                         Id = Convert.ToInt32(reader[0].ToString()),
-                         ClientId = Convert.ToInt32(reader[1].ToString()),
-                         Number = Convert.ToInt32(reader[2].ToString()),
-                         Mark = reader[3].ToString(),
-                         RecordDate = Convert.ToDateTime(reader[4].ToString())
-                     };
-                     return order.ToString();
-                 }
-             }
-
-             return null;
-         }
-         */
     }
 }
     

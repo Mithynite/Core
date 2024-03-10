@@ -10,13 +10,20 @@ namespace Core.Classes
 {
     public class DatabaseSingleton
     {
+        
+        /*
+         * Tato třída slouží jako Singleton pro připojení do databáze,
+         * zakládá SQL connection.
+         * Jakákoli podobnost s školním předlohou je víceméně náhodná. 
+         */
+        
         private static SqlConnection connection;
 
         private DatabaseSingleton()
         {
         }
 
-        public static SqlConnection GetInstance()
+        public static SqlConnection GetInstance() // Metoda, která načte data z konfiguračního souboru a vytvoří z nich SqlConnectionStringBuilder, který se využije pro připojení do vzdálené databáze
         {
             if (connection == null)
             {
@@ -36,7 +43,7 @@ namespace Core.Classes
                 
         }
 
-        public static void CloseConnection()
+        public static void CloseConnection() // Ukončení spojení s databází
         {
             if (connection != null)
             {
@@ -45,10 +52,10 @@ namespace Core.Classes
             }
         }
 
-        private static string ReadSetting(string key)
+        private static string ReadSetting(string key) // Přečtení dat z App.config
         {
             var appSettings = ConfigurationManager.AppSettings;
-            string result = appSettings[key] ?? "Not Found"; //TODO pokud je první null, vrátí se druhý
+            string result = appSettings[key] ?? "Not Found";
             return result;
         }
     }

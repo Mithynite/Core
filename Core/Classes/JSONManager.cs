@@ -6,8 +6,11 @@ namespace Core.Classes
 {
     public class JSONManager
     {
-        
-        public static IEnumerable<T> Read<T>(string path)
+        /*
+         * Tato třída by měla převzít a deserializovat JSON soubor a
+         * následně ho naimportovat do databáze skze "InsertIntoDatabaseDAO"
+         */
+        public static IEnumerable<T> Read<T>(string path) //Metoda pro deserializaci objektu z JSON souboru
         {
             using (var fileStream = File.OpenText(path))
             using (var jsonReader = new JsonTextReader(fileStream))

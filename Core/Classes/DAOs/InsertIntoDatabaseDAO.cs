@@ -7,7 +7,11 @@ namespace Core.Classes
     public class InsertIntoDatabaseDAO : DAO
     {
         
-        public string InsertNewOrder(Order order, string clientUsername)
+        /*
+         * Třída sloužící pro vložení příslušných validních dat do tabulek.
+         */
+        
+        public string InsertNewOrder(Order order, string clientUsername) // Metoda, která vkládá do databáze novou objednávku a přiřazuje ji uživateli 
         {
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Order_ (number, mark, client_id, record_date) VALUES (@number, @mark, " +
                                                    "(select id from Client where username=@clientUsername), @recordDate)", _connection))

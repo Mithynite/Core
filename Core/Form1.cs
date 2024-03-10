@@ -15,23 +15,30 @@ namespace Core
 {
     public partial class Form1 : Form
     {
+        
+        /*
+         * V této hlavní třídě se objevují převážně metody, jež kontrolují, zdali byly kliknuta nějaké tlačítka
+         * a podle toho spuští určitě činnosti, jako např.: Vložení dat do databáze.
+         * Obsahuje tedy objekty od každé DAO třídy, s jejichž metodami se dále pracuje.
+         */
+        
         private InsertIntoDatabaseDAO ins;
         private EditDatabaseDAO edda;
-        private ClientOrdersDAO codao;
-        private RemoveFromDatabase refdat;
+        private SeeDataDAO codao;
+        private RemoveFromDatabaseDAO refdat;
         public Form1()
         {
             InitializeComponent();
             ins = new InsertIntoDatabaseDAO();
             edda = new EditDatabaseDAO();
-            codao = new ClientOrdersDAO();
-            refdat = new RemoveFromDatabase();
-        }
+            codao = new SeeDataDAO();
+            refdat = new RemoveFromDatabaseDAO();
+        } // Inicializace DAO objektů
 
         
         private void close_button_Click(object sender, EventArgs e)
         {
-            Close(); //TODO Zavření aplikace
+            Close();
         }
         
         #region Insertion
@@ -183,7 +190,7 @@ namespace Core
         }
         #endregion
 
-        public bool CanBeParsedToInt(string val) 
+        public bool CanBeParsedToInt(string val) // Metoda, která kontroluje správnost převodu z textu na číslo, aby nedošlo k vyhození výjimky
         {
             int number;
             if (!int.TryParse(val, out number))

@@ -2,9 +2,12 @@ using System.Data.SqlClient;
 
 namespace Core.Classes.DAOs
 {
-    public class RemoveFromDatabase : DAO
+    public class RemoveFromDatabaseDAO : DAO
     {
-        public string RemoveClient(string username)
+        /*
+         * Tato třída slouží k odstraňovaní dat z databáze dle atributů
+         */
+        public string RemoveClient(string username) // Metoda pro odstranění klienta podle jeho username
         {
             using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item " +
                                                    "WHERE order_id IN (SELECT id FROM Order_ WHERE client_id = " +
@@ -34,7 +37,8 @@ namespace Core.Classes.DAOs
         }
         public string RemoveProduct(string tag)
         {
-            using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item WHERE product_id = (SELECT id FROM Product WHERE tag = @prodtag)", _connection))
+            using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item WHERE product_id = " +
+                                                   "(SELECT id FROM Product WHERE tag = @prodtag)", _connection))
             {
                 cmd.Parameters.AddWithValue("@prodtag", tag);
                 cmd.ExecuteNonQuery();
