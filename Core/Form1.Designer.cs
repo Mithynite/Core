@@ -84,6 +84,40 @@
             this.ViewConFile_database = new System.Windows.Forms.TextBox();
             this.ViewConFile_change = new System.Windows.Forms.Button();
             this.ViewConFile_datas = new System.Windows.Forms.TextBox();
+            this.remove_panel = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Remove_del_order = new System.Windows.Forms.Button();
+            this.Remove_order_onumber = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Remove_del_product = new System.Windows.Forms.Button();
+            this.Remove_product_ptag = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Remove_del_client = new System.Windows.Forms.Button();
+            this.Remove_client_cusername = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.insert_panel.SuspendLayout();
             this.category_panel.SuspendLayout();
             this.product_panel.SuspendLayout();
@@ -95,29 +129,39 @@
             this.panel1.SuspendLayout();
             this.config_panel.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.remove_panel.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // close_button
             // 
             this.close_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.close_button.BackColor = System.Drawing.Color.Red;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.close_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.close_button.Location = new System.Drawing.Point(1572, 11);
+            this.close_button.Location = new System.Drawing.Point(1322, 13);
             this.close_button.Margin = new System.Windows.Forms.Padding(0);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(45, 31);
+            this.close_button.Size = new System.Drawing.Size(40, 33);
             this.close_button.TabIndex = 0;
-            this.close_button.Text = "X";
+            this.close_button.Text = "x";
             this.close_button.UseVisualStyleBackColor = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // insert_btn
             // 
             this.insert_btn.BackColor = System.Drawing.Color.DarkOrange;
-            this.insert_btn.Location = new System.Drawing.Point(35, 65);
-            this.insert_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insert_btn.Location = new System.Drawing.Point(11, 52);
+            this.insert_btn.Margin = new System.Windows.Forms.Padding(2);
             this.insert_btn.Name = "insert_btn";
-            this.insert_btn.Size = new System.Drawing.Size(111, 41);
+            this.insert_btn.Size = new System.Drawing.Size(83, 33);
             this.insert_btn.TabIndex = 1;
             this.insert_btn.Text = "Insert";
             this.insert_btn.UseVisualStyleBackColor = false;
@@ -126,10 +170,10 @@
             // edit_btn
             // 
             this.edit_btn.BackColor = System.Drawing.Color.Orange;
-            this.edit_btn.Location = new System.Drawing.Point(35, 142);
-            this.edit_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.edit_btn.Location = new System.Drawing.Point(11, 114);
+            this.edit_btn.Margin = new System.Windows.Forms.Padding(2);
             this.edit_btn.Name = "edit_btn";
-            this.edit_btn.Size = new System.Drawing.Size(111, 41);
+            this.edit_btn.Size = new System.Drawing.Size(83, 33);
             this.edit_btn.TabIndex = 2;
             this.edit_btn.Text = "Edit";
             this.edit_btn.UseVisualStyleBackColor = false;
@@ -137,21 +181,22 @@
             // remove_btn
             // 
             this.remove_btn.BackColor = System.Drawing.Color.DarkOrange;
-            this.remove_btn.Location = new System.Drawing.Point(35, 222);
-            this.remove_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.remove_btn.Location = new System.Drawing.Point(11, 179);
+            this.remove_btn.Margin = new System.Windows.Forms.Padding(2);
             this.remove_btn.Name = "remove_btn";
-            this.remove_btn.Size = new System.Drawing.Size(111, 41);
+            this.remove_btn.Size = new System.Drawing.Size(83, 33);
             this.remove_btn.TabIndex = 3;
             this.remove_btn.Text = "Remove";
             this.remove_btn.UseVisualStyleBackColor = false;
+            this.remove_btn.Click += new System.EventHandler(this.remove_btn_Click);
             // 
             // import_btn
             // 
             this.import_btn.BackColor = System.Drawing.Color.Gold;
-            this.import_btn.Location = new System.Drawing.Point(35, 295);
-            this.import_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.import_btn.Location = new System.Drawing.Point(11, 239);
+            this.import_btn.Margin = new System.Windows.Forms.Padding(2);
             this.import_btn.Name = "import_btn";
-            this.import_btn.Size = new System.Drawing.Size(111, 41);
+            this.import_btn.Size = new System.Drawing.Size(83, 33);
             this.import_btn.TabIndex = 4;
             this.import_btn.Text = "Import Data";
             this.import_btn.UseVisualStyleBackColor = false;
@@ -162,21 +207,21 @@
             this.output_txt.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.output_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.output_txt.ForeColor = System.Drawing.Color.Yellow;
-            this.output_txt.Location = new System.Drawing.Point(0, 756);
-            this.output_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.output_txt.Location = new System.Drawing.Point(0, 614);
+            this.output_txt.Margin = new System.Windows.Forms.Padding(2);
             this.output_txt.Name = "output_txt";
             this.output_txt.ReadOnly = true;
-            this.output_txt.Size = new System.Drawing.Size(1641, 296);
+            this.output_txt.Size = new System.Drawing.Size(1383, 241);
             this.output_txt.TabIndex = 5;
             this.output_txt.Text = "";
             // 
             // view_btn
             // 
             this.view_btn.BackColor = System.Drawing.Color.Goldenrod;
-            this.view_btn.Location = new System.Drawing.Point(35, 373);
-            this.view_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.view_btn.Location = new System.Drawing.Point(11, 302);
+            this.view_btn.Margin = new System.Windows.Forms.Padding(2);
             this.view_btn.Name = "view_btn";
-            this.view_btn.Size = new System.Drawing.Size(111, 41);
+            this.view_btn.Size = new System.Drawing.Size(83, 33);
             this.view_btn.TabIndex = 6;
             this.view_btn.Text = "View ConFile";
             this.view_btn.UseVisualStyleBackColor = false;
@@ -191,10 +236,10 @@
             this.insert_panel.Controls.Add(this.client_panel);
             this.insert_panel.Controls.Add(this.order_panel);
             this.insert_panel.Controls.Add(this.insert_label);
-            this.insert_panel.Location = new System.Drawing.Point(204, 9);
-            this.insert_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insert_panel.Location = new System.Drawing.Point(125, 11);
+            this.insert_panel.Margin = new System.Windows.Forms.Padding(2);
             this.insert_panel.Name = "insert_panel";
-            this.insert_panel.Size = new System.Drawing.Size(951, 386);
+            this.insert_panel.Size = new System.Drawing.Size(713, 314);
             this.insert_panel.TabIndex = 7;
             this.insert_panel.Visible = false;
             // 
@@ -205,40 +250,41 @@
             this.category_panel.Controls.Add(this.Insert_ncat_note);
             this.category_panel.Controls.Add(this.Insert_ncat_title);
             this.category_panel.Controls.Add(this.label2);
-            this.category_panel.Location = new System.Drawing.Point(709, 48);
-            this.category_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.category_panel.Location = new System.Drawing.Point(532, 39);
+            this.category_panel.Margin = new System.Windows.Forms.Padding(2);
             this.category_panel.Name = "category_panel";
-            this.category_panel.Size = new System.Drawing.Size(239, 335);
+            this.category_panel.Size = new System.Drawing.Size(179, 272);
             this.category_panel.TabIndex = 11;
             // 
             // Insert_create_ncat
             // 
             this.Insert_create_ncat.BackColor = System.Drawing.Color.Maroon;
             this.Insert_create_ncat.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Insert_create_ncat.Location = new System.Drawing.Point(49, 156);
-            this.Insert_create_ncat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_create_ncat.Location = new System.Drawing.Point(37, 127);
+            this.Insert_create_ncat.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_create_ncat.Name = "Insert_create_ncat";
-            this.Insert_create_ncat.Size = new System.Drawing.Size(117, 39);
+            this.Insert_create_ncat.Size = new System.Drawing.Size(88, 32);
             this.Insert_create_ncat.TabIndex = 12;
             this.Insert_create_ncat.Text = "Create";
             this.Insert_create_ncat.UseVisualStyleBackColor = false;
+            this.Insert_create_ncat.Click += new System.EventHandler(this.Insert_create_ncat_Click);
             // 
             // Insert_ncat_note
             // 
-            this.Insert_ncat_note.Location = new System.Drawing.Point(16, 112);
-            this.Insert_ncat_note.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_ncat_note.Location = new System.Drawing.Point(12, 91);
+            this.Insert_ncat_note.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_ncat_note.Name = "Insert_ncat_note";
-            this.Insert_ncat_note.Size = new System.Drawing.Size(204, 22);
+            this.Insert_ncat_note.Size = new System.Drawing.Size(154, 20);
             this.Insert_ncat_note.TabIndex = 13;
             this.Insert_ncat_note.Text = "note (optional)";
             this.Insert_ncat_note.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_ncat_title
             // 
-            this.Insert_ncat_title.Location = new System.Drawing.Point(16, 69);
-            this.Insert_ncat_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_ncat_title.Location = new System.Drawing.Point(12, 56);
+            this.Insert_ncat_title.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_ncat_title.Name = "Insert_ncat_title";
-            this.Insert_ncat_title.Size = new System.Drawing.Size(204, 22);
+            this.Insert_ncat_title.Size = new System.Drawing.Size(154, 20);
             this.Insert_ncat_title.TabIndex = 12;
             this.Insert_ncat_title.Text = "title (name)";
             this.Insert_ncat_title.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -247,9 +293,10 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(16, 16);
+            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 33);
+            this.label2.Size = new System.Drawing.Size(158, 27);
             this.label2.TabIndex = 9;
             this.label2.Text = "New Category";
             // 
@@ -261,50 +308,51 @@
             this.product_panel.Controls.Add(this.Insert_np_price);
             this.product_panel.Controls.Add(this.Insert_np_tag);
             this.product_panel.Controls.Add(this.label1);
-            this.product_panel.Location = new System.Drawing.Point(347, 206);
-            this.product_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.product_panel.Location = new System.Drawing.Point(260, 167);
+            this.product_panel.Margin = new System.Windows.Forms.Padding(2);
             this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(357, 177);
+            this.product_panel.Size = new System.Drawing.Size(268, 144);
             this.product_panel.TabIndex = 10;
             // 
             // Insert_create_np
             // 
             this.Insert_create_np.BackColor = System.Drawing.Color.Maroon;
             this.Insert_create_np.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Insert_create_np.Location = new System.Drawing.Point(121, 135);
-            this.Insert_create_np.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_create_np.Location = new System.Drawing.Point(91, 110);
+            this.Insert_create_np.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_create_np.Name = "Insert_create_np";
-            this.Insert_create_np.Size = new System.Drawing.Size(117, 39);
+            this.Insert_create_np.Size = new System.Drawing.Size(88, 32);
             this.Insert_create_np.TabIndex = 8;
             this.Insert_create_np.Text = "Create";
             this.Insert_create_np.UseVisualStyleBackColor = false;
+            this.Insert_create_np.Click += new System.EventHandler(this.Insert_create_np_Click);
             // 
             // Insert_np_title
             // 
-            this.Insert_np_title.Location = new System.Drawing.Point(77, 102);
-            this.Insert_np_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_np_title.Location = new System.Drawing.Point(58, 83);
+            this.Insert_np_title.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_np_title.Name = "Insert_np_title";
-            this.Insert_np_title.Size = new System.Drawing.Size(204, 22);
+            this.Insert_np_title.Size = new System.Drawing.Size(154, 20);
             this.Insert_np_title.TabIndex = 11;
             this.Insert_np_title.Text = "category title (name)";
             this.Insert_np_title.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_np_price
             // 
-            this.Insert_np_price.Location = new System.Drawing.Point(77, 73);
-            this.Insert_np_price.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_np_price.Location = new System.Drawing.Point(58, 59);
+            this.Insert_np_price.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_np_price.Name = "Insert_np_price";
-            this.Insert_np_price.Size = new System.Drawing.Size(204, 22);
+            this.Insert_np_price.Size = new System.Drawing.Size(154, 20);
             this.Insert_np_price.TabIndex = 10;
             this.Insert_np_price.Text = "price";
             this.Insert_np_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_np_tag
             // 
-            this.Insert_np_tag.Location = new System.Drawing.Point(77, 43);
-            this.Insert_np_tag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_np_tag.Location = new System.Drawing.Point(58, 35);
+            this.Insert_np_tag.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_np_tag.Name = "Insert_np_tag";
-            this.Insert_np_tag.Size = new System.Drawing.Size(204, 22);
+            this.Insert_np_tag.Size = new System.Drawing.Size(154, 20);
             this.Insert_np_tag.TabIndex = 8;
             this.Insert_np_tag.Text = "tag (name)";
             this.Insert_np_tag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -313,9 +361,10 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(91, 7);
+            this.label1.Location = new System.Drawing.Point(68, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 33);
+            this.label1.Size = new System.Drawing.Size(144, 27);
             this.label1.TabIndex = 9;
             this.label1.Text = "New Product\r\n";
             // 
@@ -326,40 +375,41 @@
             this.orderitems_panel.Controls.Add(this.Insert_aito_ptag);
             this.orderitems_panel.Controls.Add(this.Insert_aito_onumber);
             this.orderitems_panel.Controls.Add(this.orderItem_insert_label);
-            this.orderitems_panel.Location = new System.Drawing.Point(3, 206);
-            this.orderitems_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.orderitems_panel.Location = new System.Drawing.Point(2, 167);
+            this.orderitems_panel.Margin = new System.Windows.Forms.Padding(2);
             this.orderitems_panel.Name = "orderitems_panel";
-            this.orderitems_panel.Size = new System.Drawing.Size(337, 177);
+            this.orderitems_panel.Size = new System.Drawing.Size(253, 144);
             this.orderitems_panel.TabIndex = 9;
             // 
             // Insert_add_aito
             // 
             this.Insert_add_aito.BackColor = System.Drawing.Color.Maroon;
             this.Insert_add_aito.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Insert_add_aito.Location = new System.Drawing.Point(107, 127);
-            this.Insert_add_aito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_add_aito.Location = new System.Drawing.Point(80, 103);
+            this.Insert_add_aito.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_add_aito.Name = "Insert_add_aito";
-            this.Insert_add_aito.Size = new System.Drawing.Size(117, 39);
+            this.Insert_add_aito.Size = new System.Drawing.Size(88, 32);
             this.Insert_add_aito.TabIndex = 8;
             this.Insert_add_aito.Text = "Link and add";
             this.Insert_add_aito.UseVisualStyleBackColor = false;
+            this.Insert_add_aito.Click += new System.EventHandler(this.Insert_add_aito_Click);
             // 
             // Insert_aito_ptag
             // 
-            this.Insert_aito_ptag.Location = new System.Drawing.Point(67, 90);
-            this.Insert_aito_ptag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_aito_ptag.Location = new System.Drawing.Point(50, 73);
+            this.Insert_aito_ptag.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_aito_ptag.Name = "Insert_aito_ptag";
-            this.Insert_aito_ptag.Size = new System.Drawing.Size(204, 22);
+            this.Insert_aito_ptag.Size = new System.Drawing.Size(154, 20);
             this.Insert_aito_ptag.TabIndex = 10;
             this.Insert_aito_ptag.Text = "product tag\r\n";
             this.Insert_aito_ptag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_aito_onumber
             // 
-            this.Insert_aito_onumber.Location = new System.Drawing.Point(67, 50);
-            this.Insert_aito_onumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_aito_onumber.Location = new System.Drawing.Point(50, 41);
+            this.Insert_aito_onumber.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_aito_onumber.Name = "Insert_aito_onumber";
-            this.Insert_aito_onumber.Size = new System.Drawing.Size(204, 22);
+            this.Insert_aito_onumber.Size = new System.Drawing.Size(154, 20);
             this.Insert_aito_onumber.TabIndex = 8;
             this.Insert_aito_onumber.Text = "order number";
             this.Insert_aito_onumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -368,9 +418,10 @@
             // 
             this.orderItem_insert_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderItem_insert_label.ForeColor = System.Drawing.SystemColors.Window;
-            this.orderItem_insert_label.Location = new System.Drawing.Point(53, 15);
+            this.orderItem_insert_label.Location = new System.Drawing.Point(40, 4);
+            this.orderItem_insert_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.orderItem_insert_label.Name = "orderItem_insert_label";
-            this.orderItem_insert_label.Size = new System.Drawing.Size(243, 33);
+            this.orderItem_insert_label.Size = new System.Drawing.Size(182, 27);
             this.orderItem_insert_label.TabIndex = 9;
             this.orderItem_insert_label.Text = "Add item to order";
             // 
@@ -381,28 +432,28 @@
             this.client_panel.Controls.Add(this.Insert_nclient_mail);
             this.client_panel.Controls.Add(this.Insert_create_nclient);
             this.client_panel.Controls.Add(this.client_insert_label);
-            this.client_panel.Location = new System.Drawing.Point(380, 48);
-            this.client_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.client_panel.Location = new System.Drawing.Point(285, 39);
+            this.client_panel.Margin = new System.Windows.Forms.Padding(2);
             this.client_panel.Name = "client_panel";
-            this.client_panel.Size = new System.Drawing.Size(324, 153);
+            this.client_panel.Size = new System.Drawing.Size(243, 124);
             this.client_panel.TabIndex = 6;
             // 
             // Insert_nclient_username
             // 
-            this.Insert_nclient_username.Location = new System.Drawing.Point(44, 69);
-            this.Insert_nclient_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_nclient_username.Location = new System.Drawing.Point(33, 56);
+            this.Insert_nclient_username.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_nclient_username.Name = "Insert_nclient_username";
-            this.Insert_nclient_username.Size = new System.Drawing.Size(204, 22);
+            this.Insert_nclient_username.Size = new System.Drawing.Size(154, 20);
             this.Insert_nclient_username.TabIndex = 8;
             this.Insert_nclient_username.Text = "username";
             this.Insert_nclient_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_nclient_mail
             // 
-            this.Insert_nclient_mail.Location = new System.Drawing.Point(44, 39);
-            this.Insert_nclient_mail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_nclient_mail.Location = new System.Drawing.Point(33, 32);
+            this.Insert_nclient_mail.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_nclient_mail.Name = "Insert_nclient_mail";
-            this.Insert_nclient_mail.Size = new System.Drawing.Size(204, 22);
+            this.Insert_nclient_mail.Size = new System.Drawing.Size(154, 20);
             this.Insert_nclient_mail.TabIndex = 8;
             this.Insert_nclient_mail.Text = "e - mail";
             this.Insert_nclient_mail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -411,21 +462,23 @@
             // 
             this.Insert_create_nclient.BackColor = System.Drawing.Color.Maroon;
             this.Insert_create_nclient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Insert_create_nclient.Location = new System.Drawing.Point(88, 105);
-            this.Insert_create_nclient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_create_nclient.Location = new System.Drawing.Point(66, 85);
+            this.Insert_create_nclient.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_create_nclient.Name = "Insert_create_nclient";
-            this.Insert_create_nclient.Size = new System.Drawing.Size(117, 39);
+            this.Insert_create_nclient.Size = new System.Drawing.Size(88, 32);
             this.Insert_create_nclient.TabIndex = 4;
             this.Insert_create_nclient.Text = "Create";
             this.Insert_create_nclient.UseVisualStyleBackColor = false;
+            this.Insert_create_nclient.Click += new System.EventHandler(this.Insert_create_nclient_Click);
             // 
             // client_insert_label
             // 
             this.client_insert_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.client_insert_label.ForeColor = System.Drawing.SystemColors.Window;
-            this.client_insert_label.Location = new System.Drawing.Point(72, 0);
+            this.client_insert_label.Location = new System.Drawing.Point(54, 0);
+            this.client_insert_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.client_insert_label.Name = "client_insert_label";
-            this.client_insert_label.Size = new System.Drawing.Size(193, 37);
+            this.client_insert_label.Size = new System.Drawing.Size(145, 30);
             this.client_insert_label.TabIndex = 8;
             this.client_insert_label.Text = "New Client";
             // 
@@ -437,28 +490,28 @@
             this.order_panel.Controls.Add(this.order_insert_label);
             this.order_panel.Controls.Add(this.Insert_no_number);
             this.order_panel.Controls.Add(this.Insert_create_no);
-            this.order_panel.Location = new System.Drawing.Point(3, 47);
-            this.order_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.order_panel.Location = new System.Drawing.Point(2, 38);
+            this.order_panel.Margin = new System.Windows.Forms.Padding(2);
             this.order_panel.Name = "order_panel";
-            this.order_panel.Size = new System.Drawing.Size(372, 153);
+            this.order_panel.Size = new System.Drawing.Size(279, 124);
             this.order_panel.TabIndex = 5;
             // 
             // Insert_no_cusername
             // 
-            this.Insert_no_cusername.Location = new System.Drawing.Point(19, 94);
-            this.Insert_no_cusername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_no_cusername.Location = new System.Drawing.Point(14, 76);
+            this.Insert_no_cusername.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_no_cusername.Name = "Insert_no_cusername";
-            this.Insert_no_cusername.Size = new System.Drawing.Size(204, 22);
+            this.Insert_no_cusername.Size = new System.Drawing.Size(154, 20);
             this.Insert_no_cusername.TabIndex = 3;
             this.Insert_no_cusername.Text = "Client username";
             this.Insert_no_cusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Insert_no_mark
             // 
-            this.Insert_no_mark.Location = new System.Drawing.Point(19, 62);
-            this.Insert_no_mark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_no_mark.Location = new System.Drawing.Point(14, 50);
+            this.Insert_no_mark.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_no_mark.Name = "Insert_no_mark";
-            this.Insert_no_mark.Size = new System.Drawing.Size(204, 22);
+            this.Insert_no_mark.Size = new System.Drawing.Size(154, 20);
             this.Insert_no_mark.TabIndex = 2;
             this.Insert_no_mark.Text = "mark (optional)";
             this.Insert_no_mark.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -467,18 +520,19 @@
             // 
             this.order_insert_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.order_insert_label.ForeColor = System.Drawing.SystemColors.Window;
-            this.order_insert_label.Location = new System.Drawing.Point(53, 0);
+            this.order_insert_label.Location = new System.Drawing.Point(40, 0);
+            this.order_insert_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.order_insert_label.Name = "order_insert_label";
-            this.order_insert_label.Size = new System.Drawing.Size(156, 31);
+            this.order_insert_label.Size = new System.Drawing.Size(117, 25);
             this.order_insert_label.TabIndex = 7;
             this.order_insert_label.Text = "New Order";
             // 
             // Insert_no_number
             // 
-            this.Insert_no_number.Location = new System.Drawing.Point(19, 34);
-            this.Insert_no_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_no_number.Location = new System.Drawing.Point(14, 28);
+            this.Insert_no_number.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_no_number.Name = "Insert_no_number";
-            this.Insert_no_number.Size = new System.Drawing.Size(204, 22);
+            this.Insert_no_number.Size = new System.Drawing.Size(154, 20);
             this.Insert_no_number.TabIndex = 1;
             this.Insert_no_number.Text = "number";
             this.Insert_no_number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -487,33 +541,35 @@
             // 
             this.Insert_create_no.BackColor = System.Drawing.Color.Maroon;
             this.Insert_create_no.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Insert_create_no.Location = new System.Drawing.Point(244, 53);
-            this.Insert_create_no.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Insert_create_no.Location = new System.Drawing.Point(183, 43);
+            this.Insert_create_no.Margin = new System.Windows.Forms.Padding(2);
             this.Insert_create_no.Name = "Insert_create_no";
-            this.Insert_create_no.Size = new System.Drawing.Size(117, 39);
+            this.Insert_create_no.Size = new System.Drawing.Size(88, 32);
             this.Insert_create_no.TabIndex = 0;
             this.Insert_create_no.Text = "Create";
             this.Insert_create_no.UseVisualStyleBackColor = false;
+            this.Insert_create_no.Click += new System.EventHandler(this.Insert_create_no_Click);
             // 
             // insert_label
             // 
             this.insert_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.insert_label.Location = new System.Drawing.Point(215, 2);
+            this.insert_label.Location = new System.Drawing.Point(197, 1);
+            this.insert_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.insert_label.Name = "insert_label";
-            this.insert_label.Size = new System.Drawing.Size(544, 41);
+            this.insert_label.Size = new System.Drawing.Size(242, 33);
             this.insert_label.TabIndex = 3;
-            this.insert_label.Text = "Here you can insert new Data";
+            this.insert_label.Text = "Insert new Data!";
             // 
             // see_panel
             // 
             this.see_panel.Controls.Add(this.panel2);
             this.see_panel.Controls.Add(this.label3);
             this.see_panel.Controls.Add(this.panel1);
-            this.see_panel.Location = new System.Drawing.Point(204, 396);
-            this.see_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.see_panel.Location = new System.Drawing.Point(763, 331);
+            this.see_panel.Margin = new System.Windows.Forms.Padding(2);
             this.see_panel.Name = "see_panel";
-            this.see_panel.Size = new System.Drawing.Size(515, 183);
+            this.see_panel.Size = new System.Drawing.Size(258, 265);
             this.see_panel.TabIndex = 9;
             this.see_panel.Visible = false;
             // 
@@ -523,19 +579,20 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.SeeData_show_poo);
             this.panel2.Controls.Add(this.SeeData_poo_onumber);
-            this.panel2.Location = new System.Drawing.Point(251, 50);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(-2, 145);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(263, 133);
+            this.panel2.Size = new System.Drawing.Size(260, 120);
             this.panel2.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(31, 10);
+            this.label5.Location = new System.Drawing.Point(56, 12);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(215, 31);
+            this.label5.Size = new System.Drawing.Size(161, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Products of Order";
             // 
@@ -543,10 +600,10 @@
             // 
             this.SeeData_show_poo.BackColor = System.Drawing.Color.Maroon;
             this.SeeData_show_poo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.SeeData_show_poo.Location = new System.Drawing.Point(72, 85);
-            this.SeeData_show_poo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SeeData_show_poo.Location = new System.Drawing.Point(84, 75);
+            this.SeeData_show_poo.Margin = new System.Windows.Forms.Padding(2);
             this.SeeData_show_poo.Name = "SeeData_show_poo";
-            this.SeeData_show_poo.Size = new System.Drawing.Size(117, 39);
+            this.SeeData_show_poo.Size = new System.Drawing.Size(88, 32);
             this.SeeData_show_poo.TabIndex = 9;
             this.SeeData_show_poo.Text = "Show\r\n";
             this.SeeData_show_poo.UseVisualStyleBackColor = false;
@@ -554,21 +611,22 @@
             // 
             // SeeData_poo_onumber
             // 
-            this.SeeData_poo_onumber.Location = new System.Drawing.Point(31, 53);
-            this.SeeData_poo_onumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SeeData_poo_onumber.Location = new System.Drawing.Point(56, 39);
+            this.SeeData_poo_onumber.Margin = new System.Windows.Forms.Padding(2);
             this.SeeData_poo_onumber.Name = "SeeData_poo_onumber";
-            this.SeeData_poo_onumber.Size = new System.Drawing.Size(204, 22);
+            this.SeeData_poo_onumber.Size = new System.Drawing.Size(154, 20);
             this.SeeData_poo_onumber.TabIndex = 9;
             this.SeeData_poo_onumber.Text = "order number";
             this.SeeData_poo_onumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(91, 7);
+            this.label3.Location = new System.Drawing.Point(17, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(349, 41);
+            this.label3.Size = new System.Drawing.Size(230, 33);
             this.label3.TabIndex = 4;
             this.label3.Text = "Let\'s see the Data!";
             // 
@@ -578,19 +636,20 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.SeeData_show_co);
             this.panel1.Controls.Add(this.SeeData_co_cusername);
-            this.panel1.Location = new System.Drawing.Point(3, 50);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 35);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(243, 133);
+            this.panel1.Size = new System.Drawing.Size(258, 108);
             this.panel1.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(39, 11);
+            this.label4.Location = new System.Drawing.Point(63, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(201, 31);
+            this.label4.Size = new System.Drawing.Size(151, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Client\'s orders";
             // 
@@ -598,10 +657,10 @@
             // 
             this.SeeData_show_co.BackColor = System.Drawing.Color.Maroon;
             this.SeeData_show_co.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.SeeData_show_co.Location = new System.Drawing.Point(67, 85);
-            this.SeeData_show_co.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SeeData_show_co.Location = new System.Drawing.Point(82, 70);
+            this.SeeData_show_co.Margin = new System.Windows.Forms.Padding(2);
             this.SeeData_show_co.Name = "SeeData_show_co";
-            this.SeeData_show_co.Size = new System.Drawing.Size(117, 39);
+            this.SeeData_show_co.Size = new System.Drawing.Size(88, 32);
             this.SeeData_show_co.TabIndex = 9;
             this.SeeData_show_co.Text = "Show";
             this.SeeData_show_co.UseVisualStyleBackColor = false;
@@ -609,10 +668,10 @@
             // 
             // SeeData_co_cusername
             // 
-            this.SeeData_co_cusername.Location = new System.Drawing.Point(16, 53);
-            this.SeeData_co_cusername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SeeData_co_cusername.Location = new System.Drawing.Point(54, 40);
+            this.SeeData_co_cusername.Margin = new System.Windows.Forms.Padding(2);
             this.SeeData_co_cusername.Name = "SeeData_co_cusername";
-            this.SeeData_co_cusername.Size = new System.Drawing.Size(204, 22);
+            this.SeeData_co_cusername.Size = new System.Drawing.Size(154, 20);
             this.SeeData_co_cusername.TabIndex = 9;
             this.SeeData_co_cusername.Text = "client username";
             this.SeeData_co_cusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -620,10 +679,10 @@
             // see_btn
             // 
             this.see_btn.BackColor = System.Drawing.Color.Gold;
-            this.see_btn.Location = new System.Drawing.Point(35, 450);
-            this.see_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.see_btn.Location = new System.Drawing.Point(11, 365);
+            this.see_btn.Margin = new System.Windows.Forms.Padding(2);
             this.see_btn.Name = "see_btn";
-            this.see_btn.Size = new System.Drawing.Size(111, 41);
+            this.see_btn.Size = new System.Drawing.Size(83, 33);
             this.see_btn.TabIndex = 8;
             this.see_btn.Text = "See data";
             this.see_btn.UseVisualStyleBackColor = false;
@@ -633,20 +692,21 @@
             // 
             this.config_panel.Controls.Add(this.label7);
             this.config_panel.Controls.Add(this.panel5);
-            this.config_panel.Location = new System.Drawing.Point(1157, 9);
-            this.config_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.config_panel.Location = new System.Drawing.Point(1084, 331);
+            this.config_panel.Margin = new System.Windows.Forms.Padding(2);
             this.config_panel.Name = "config_panel";
-            this.config_panel.Size = new System.Drawing.Size(377, 386);
+            this.config_panel.Size = new System.Drawing.Size(243, 265);
             this.config_panel.TabIndex = 12;
             this.config_panel.Visible = false;
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(0, 10);
+            this.label7.Location = new System.Drawing.Point(2, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(371, 34);
+            this.label7.Size = new System.Drawing.Size(239, 28);
             this.label7.TabIndex = 4;
             this.label7.Text = "Edit Configuration File!";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -659,38 +719,38 @@
             this.panel5.Controls.Add(this.ViewConFile_database);
             this.panel5.Controls.Add(this.ViewConFile_change);
             this.panel5.Controls.Add(this.ViewConFile_datas);
-            this.panel5.Location = new System.Drawing.Point(3, 48);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(2, 35);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(368, 335);
+            this.panel5.Size = new System.Drawing.Size(241, 230);
             this.panel5.TabIndex = 0;
             // 
             // ViewConFile_passwd
             // 
-            this.ViewConFile_passwd.Location = new System.Drawing.Point(76, 201);
-            this.ViewConFile_passwd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewConFile_passwd.Location = new System.Drawing.Point(44, 127);
+            this.ViewConFile_passwd.Margin = new System.Windows.Forms.Padding(2);
             this.ViewConFile_passwd.Name = "ViewConFile_passwd";
-            this.ViewConFile_passwd.Size = new System.Drawing.Size(204, 22);
+            this.ViewConFile_passwd.Size = new System.Drawing.Size(154, 20);
             this.ViewConFile_passwd.TabIndex = 14;
             this.ViewConFile_passwd.Text = "password";
             this.ViewConFile_passwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ViewConFile_name
             // 
-            this.ViewConFile_name.Location = new System.Drawing.Point(76, 145);
-            this.ViewConFile_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewConFile_name.Location = new System.Drawing.Point(44, 96);
+            this.ViewConFile_name.Margin = new System.Windows.Forms.Padding(2);
             this.ViewConFile_name.Name = "ViewConFile_name";
-            this.ViewConFile_name.Size = new System.Drawing.Size(204, 22);
+            this.ViewConFile_name.Size = new System.Drawing.Size(154, 20);
             this.ViewConFile_name.TabIndex = 13;
             this.ViewConFile_name.Text = "name";
             this.ViewConFile_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ViewConFile_database
             // 
-            this.ViewConFile_database.Location = new System.Drawing.Point(76, 94);
-            this.ViewConFile_database.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewConFile_database.Location = new System.Drawing.Point(44, 60);
+            this.ViewConFile_database.Margin = new System.Windows.Forms.Padding(2);
             this.ViewConFile_database.Name = "ViewConFile_database";
-            this.ViewConFile_database.Size = new System.Drawing.Size(204, 22);
+            this.ViewConFile_database.Size = new System.Drawing.Size(154, 20);
             this.ViewConFile_database.TabIndex = 12;
             this.ViewConFile_database.Text = "initial catalog (database)";
             this.ViewConFile_database.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -699,10 +759,10 @@
             // 
             this.ViewConFile_change.BackColor = System.Drawing.Color.Maroon;
             this.ViewConFile_change.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ViewConFile_change.Location = new System.Drawing.Point(119, 260);
-            this.ViewConFile_change.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewConFile_change.Location = new System.Drawing.Point(75, 184);
+            this.ViewConFile_change.Margin = new System.Windows.Forms.Padding(2);
             this.ViewConFile_change.Name = "ViewConFile_change";
-            this.ViewConFile_change.Size = new System.Drawing.Size(117, 39);
+            this.ViewConFile_change.Size = new System.Drawing.Size(88, 32);
             this.ViewConFile_change.TabIndex = 9;
             this.ViewConFile_change.Text = "Change";
             this.ViewConFile_change.UseVisualStyleBackColor = false;
@@ -710,20 +770,409 @@
             // 
             // ViewConFile_datas
             // 
-            this.ViewConFile_datas.Location = new System.Drawing.Point(76, 39);
-            this.ViewConFile_datas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewConFile_datas.Location = new System.Drawing.Point(44, 27);
+            this.ViewConFile_datas.Margin = new System.Windows.Forms.Padding(2);
             this.ViewConFile_datas.Name = "ViewConFile_datas";
-            this.ViewConFile_datas.Size = new System.Drawing.Size(204, 22);
+            this.ViewConFile_datas.Size = new System.Drawing.Size(154, 20);
             this.ViewConFile_datas.TabIndex = 9;
             this.ViewConFile_datas.Text = "data source";
             this.ViewConFile_datas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // remove_panel
+            // 
+            this.remove_panel.Controls.Add(this.panel7);
+            this.remove_panel.Controls.Add(this.panel4);
+            this.remove_panel.Controls.Add(this.label8);
+            this.remove_panel.Controls.Add(this.panel6);
+            this.remove_panel.Location = new System.Drawing.Point(862, 26);
+            this.remove_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.remove_panel.Name = "remove_panel";
+            this.remove_panel.Size = new System.Drawing.Size(399, 274);
+            this.remove_panel.TabIndex = 12;
+            this.remove_panel.Visible = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel7.Controls.Add(this.label10);
+            this.panel7.Controls.Add(this.Remove_del_order);
+            this.panel7.Controls.Add(this.Remove_order_onumber);
+            this.panel7.Location = new System.Drawing.Point(90, 158);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(192, 108);
+            this.panel7.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.Window;
+            this.label10.Location = new System.Drawing.Point(61, 8);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 25);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Order";
+            // 
+            // Remove_del_order
+            // 
+            this.Remove_del_order.BackColor = System.Drawing.Color.Maroon;
+            this.Remove_del_order.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Remove_del_order.Location = new System.Drawing.Point(50, 69);
+            this.Remove_del_order.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_del_order.Name = "Remove_del_order";
+            this.Remove_del_order.Size = new System.Drawing.Size(88, 32);
+            this.Remove_del_order.TabIndex = 9;
+            this.Remove_del_order.Text = "Delete";
+            this.Remove_del_order.UseVisualStyleBackColor = false;
+            this.Remove_del_order.Click += new System.EventHandler(this.Remove_del_order_Click);
+            // 
+            // Remove_order_onumber
+            // 
+            this.Remove_order_onumber.Location = new System.Drawing.Point(12, 43);
+            this.Remove_order_onumber.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_order_onumber.Name = "Remove_order_onumber";
+            this.Remove_order_onumber.Size = new System.Drawing.Size(154, 20);
+            this.Remove_order_onumber.TabIndex = 9;
+            this.Remove_order_onumber.Text = "order number";
+            this.Remove_order_onumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.Remove_del_product);
+            this.panel4.Controls.Add(this.Remove_product_ptag);
+            this.panel4.Location = new System.Drawing.Point(189, 41);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(208, 108);
+            this.panel4.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Window;
+            this.label6.Location = new System.Drawing.Point(69, 8);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Product";
+            // 
+            // Remove_del_product
+            // 
+            this.Remove_del_product.BackColor = System.Drawing.Color.Maroon;
+            this.Remove_del_product.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Remove_del_product.Location = new System.Drawing.Point(54, 69);
+            this.Remove_del_product.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_del_product.Name = "Remove_del_product";
+            this.Remove_del_product.Size = new System.Drawing.Size(88, 32);
+            this.Remove_del_product.TabIndex = 9;
+            this.Remove_del_product.Text = "Delete";
+            this.Remove_del_product.UseVisualStyleBackColor = false;
+            this.Remove_del_product.Click += new System.EventHandler(this.Remove_del_product_Click);
+            // 
+            // Remove_product_ptag
+            // 
+            this.Remove_product_ptag.Location = new System.Drawing.Point(23, 43);
+            this.Remove_product_ptag.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_product_ptag.Name = "Remove_product_ptag";
+            this.Remove_product_ptag.Size = new System.Drawing.Size(154, 20);
+            this.Remove_product_ptag.TabIndex = 9;
+            this.Remove_product_ptag.Text = "product tag";
+            this.Remove_product_ptag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(90, 6);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(178, 33);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Remove Data!";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.Remove_del_client);
+            this.panel6.Controls.Add(this.Remove_client_cusername);
+            this.panel6.Location = new System.Drawing.Point(2, 41);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(182, 108);
+            this.panel6.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Window;
+            this.label9.Location = new System.Drawing.Point(61, 8);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 25);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Client";
+            // 
+            // Remove_del_client
+            // 
+            this.Remove_del_client.BackColor = System.Drawing.Color.Maroon;
+            this.Remove_del_client.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Remove_del_client.Location = new System.Drawing.Point(50, 69);
+            this.Remove_del_client.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_del_client.Name = "Remove_del_client";
+            this.Remove_del_client.Size = new System.Drawing.Size(88, 32);
+            this.Remove_del_client.TabIndex = 9;
+            this.Remove_del_client.Text = "Delete";
+            this.Remove_del_client.UseVisualStyleBackColor = false;
+            this.Remove_del_client.Click += new System.EventHandler(this.Remove_del_client_Click);
+            // 
+            // Remove_client_cusername
+            // 
+            this.Remove_client_cusername.Location = new System.Drawing.Point(12, 43);
+            this.Remove_client_cusername.Margin = new System.Windows.Forms.Padding(2);
+            this.Remove_client_cusername.Name = "Remove_client_cusername";
+            this.Remove_client_cusername.Size = new System.Drawing.Size(154, 20);
+            this.Remove_client_cusername.TabIndex = 9;
+            this.Remove_client_cusername.Text = "client username";
+            this.Remove_client_cusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel11);
+            this.panel3.Controls.Add(this.panel9);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Location = new System.Drawing.Point(125, 331);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(591, 268);
+            this.panel3.TabIndex = 13;
+            this.panel3.Visible = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel9.Controls.Add(this.textBox7);
+            this.panel9.Controls.Add(this.textBox1);
+            this.panel9.Controls.Add(this.button2);
+            this.panel9.Controls.Add(this.label12);
+            this.panel9.Controls.Add(this.textBox2);
+            this.panel9.Location = new System.Drawing.Point(193, 41);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(197, 224);
+            this.panel9.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Window;
+            this.label12.Location = new System.Drawing.Point(69, 8);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 25);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Product";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(23, 43);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(154, 20);
+            this.textBox2.TabIndex = 9;
+            this.textBox2.Text = "current tag";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(199, 6);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(192, 33);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Edit your Data!";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel10.Controls.Add(this.textBox5);
+            this.panel10.Controls.Add(this.textBox4);
+            this.panel10.Controls.Add(this.label14);
+            this.panel10.Controls.Add(this.button3);
+            this.panel10.Controls.Add(this.textBox3);
+            this.panel10.Location = new System.Drawing.Point(7, 41);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(182, 224);
+            this.panel10.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.Window;
+            this.label14.Location = new System.Drawing.Point(61, 8);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 25);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Client";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Maroon;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(41, 179);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(88, 32);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 43);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(154, 20);
+            this.textBox3.TabIndex = 9;
+            this.textBox3.Text = "current username";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(12, 88);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(154, 20);
+            this.textBox4.TabIndex = 11;
+            this.textBox4.Text = "new email";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(12, 116);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(154, 20);
+            this.textBox5.TabIndex = 12;
+            this.textBox5.Text = "new username";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel11.Controls.Add(this.textBox9);
+            this.panel11.Controls.Add(this.textBox6);
+            this.panel11.Controls.Add(this.textBox8);
+            this.panel11.Controls.Add(this.button4);
+            this.panel11.Controls.Add(this.label15);
+            this.panel11.Location = new System.Drawing.Point(394, 41);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(195, 225);
+            this.panel11.TabIndex = 12;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Window;
+            this.label15.Location = new System.Drawing.Point(57, 8);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 25);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "Category";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(54, 178);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(88, 32);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Edit";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Maroon;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Location = new System.Drawing.Point(54, 179);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(88, 32);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Edit";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(21, 88);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(154, 20);
+            this.textBox1.TabIndex = 15;
+            this.textBox1.Text = "new tag";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(21, 118);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(154, 20);
+            this.textBox7.TabIndex = 16;
+            this.textBox7.Text = "new price";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(21, 43);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(154, 20);
+            this.textBox8.TabIndex = 14;
+            this.textBox8.Text = "current title (name)";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(21, 118);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(154, 20);
+            this.textBox6.TabIndex = 14;
+            this.textBox6.Text = "new note (optional)";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(21, 88);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(154, 20);
+            this.textBox9.TabIndex = 14;
+            this.textBox9.Text = "new title";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1641, 1052);
+            this.ClientSize = new System.Drawing.Size(1383, 855);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.remove_panel);
             this.Controls.Add(this.config_panel);
             this.Controls.Add(this.see_panel);
             this.Controls.Add(this.see_btn);
@@ -736,7 +1185,7 @@
             this.Controls.Add(this.edit_btn);
             this.Controls.Add(this.insert_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -759,8 +1208,67 @@
             this.config_panel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.remove_panel.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.TextBox textBox9;
+
+        private System.Windows.Forms.TextBox textBox6;
+
+        private System.Windows.Forms.TextBox textBox8;
+
+        private System.Windows.Forms.TextBox textBox7;
+
+        private System.Windows.Forms.TextBox textBox1;
+
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
+
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label15;
+
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox3;
+
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button Remove_del_order;
+        private System.Windows.Forms.TextBox Remove_order_onumber;
+
+        private System.Windows.Forms.Panel remove_panel;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Remove_del_product;
+        private System.Windows.Forms.TextBox Remove_product_ptag;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Remove_del_client;
+        private System.Windows.Forms.TextBox Remove_client_cusername;
 
         private System.Windows.Forms.TextBox ViewConFile_database;
         private System.Windows.Forms.TextBox ViewConFile_name;

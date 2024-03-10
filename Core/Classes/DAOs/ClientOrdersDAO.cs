@@ -4,21 +4,9 @@ using System.Data.SqlClient;
 
 namespace Core.Classes.DAOs
 {
-    public class ClientOrdersDAO
+    public class ClientOrdersDAO : DAO
     {
-        private SqlConnection _connection;
-
-        public ClientOrdersDAO()
-        {
-            try
-            {
-                _connection = DatabaseSingleton.GetInstance();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"There was an Error while connecting to database: {ex}");
-            }
-        }
+        
         public IEnumerable<Order> GetByOrdersOfClient(string username)
         {
 
@@ -62,7 +50,6 @@ namespace Core.Classes.DAOs
                     Product product = new Product()
                     {
                         Id = Convert.ToInt32(reader[0].ToString()),
-                        CategoryId = Convert.ToInt32(reader[1].ToString()),
                         Tag = reader[2].ToString(),
                         Price = Convert.ToInt32(reader[3].ToString())
                     };

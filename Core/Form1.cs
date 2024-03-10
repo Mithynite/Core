@@ -14,11 +14,15 @@ namespace Core
 {
     public partial class Form1 : Form
     {
+        private InsertIntoDatabaseDAO ins;
         private ClientOrdersDAO codao;
+        private RemoveFromDatabase refdat;
         public Form1()
         {
             InitializeComponent();
+            ins = new InsertIntoDatabaseDAO();
             codao = new ClientOrdersDAO();
+            refdat = new RemoveFromDatabase();
         }
 
         
@@ -26,24 +30,78 @@ namespace Core
         {
             Close(); //TODO Zavření aplikace
         }
-
+        
+        #region Insertion
         private void insert_btn_Click(object sender, EventArgs e)
         {
             insert_panel.Visible = !insert_panel.Visible;
         }
-
-        private void see_btn_Click(object sender, EventArgs e)
+        private void Insert_create_no_Click(object sender, EventArgs e)
         {
-            see_panel.Visible = !see_panel.Visible;
+            Order order = new Order(Insert_no_mark.Text, Convert.ToInt32(Insert_no_number.Text));
+            output_txt.Text = ins.InsertNewOrder(order, Insert_no_cusername.Text);
         }
+        private void Insert_add_aito_Click(object sender, EventArgs e)
+        {
+            output_txt.Text = ins.AddItemToOrder(Convert.ToInt32(Insert_aito_onumber.Text), Insert_aito_ptag.Text);
+        }
+        private void Insert_create_nclient_Click(object sender, EventArgs e)
+        {
+            Client client = new Client(Insert_nclient_mail.Text, Insert_nclient_username.Text);
+            output_txt.Text = ins.InsertNewClient(client);
+        }
+        private void Insert_create_np_Click(object sender, EventArgs e)
+        {
+            Product product = new Product(Insert_np_tag.Text, Convert.ToInt32(Insert_np_price.Text));
+            output_txt.Text = ins.InsertNewProduct(product, Insert_np_title.Text);
+        }
+        private void Insert_create_ncat_Click(object sender, EventArgs e)
+        {
+            Category category = new Category(Insert_ncat_title.Text, Insert_ncat_note.Text);
+            output_txt.Text = ins.InsertNewCategory(category);
+        }
+        #endregion
+
+        #region Remove Data
+
+        private void remove_btn_Click(object sender, EventArgs e)
+        {
+            remove_panel.Visible = !remove_panel.Visible;
+        }
+        
+        private void Remove_del_client_Click(object sender, EventArgs e)
+        {
+            output_txt.Text = refdat.RemoveClient(Remove_client_cusername.Text);
+        }
+        private void Remove_del_order_Click(object sender, EventArgs e)
+        {
+            output_txt.Text = refdat.RemoveOrder(Convert.ToInt32(Remove_order_onumber.Text));
+        }
+        private void Remove_del_product_Click(object sender, EventArgs e)
+        {
+            output_txt.Text = refdat.RemoveProduct(Remove_product_ptag.Text);
+        }
+        #endregion
+        
+        #region Cofiguration File
         private void view_btn_Click(object sender, EventArgs e)
         {
             config_panel.Visible = !config_panel.Visible;
         }
+        private void ViewConFile_change_Click(object sender, EventArgs e)
+        {
+            ConfigurationFileManagement.UpdateConfigurationFile(ViewConFile_datas.Text, ViewConFile_database.Text, ViewConFile_name.Text, ViewConFile_passwd.Text);
+        }
+
+        #endregion
         
+        #region See your Data
+        private void see_btn_Click(object sender, EventArgs e)
+        {
+            see_panel.Visible = !see_panel.Visible;
+        }
         private void SeeData_show_co_Click(object sender, EventArgs e)
         {
-            output_txt.Clear();
             string username = SeeData_co_cusername.Text;
             username.Trim();
             IEnumerable<Order> orders = codao.GetByOrdersOfClient(username);
@@ -54,10 +112,8 @@ namespace Core
             }
             output_txt.Text = result;
         }
-        
         private void SeeData_show_poo_Click(object sender, EventArgs e)
         {
-            output_txt.Clear();
             int orderNumber = Convert.ToInt32(SeeData_poo_onumber.Text);
             IEnumerable<Product> products = codao.GetByItemsOfAnOrder(orderNumber);
             string result = "";
@@ -67,10 +123,8 @@ namespace Core
             }
             output_txt.Text = result;
         }
+        #endregion
+
         
-        private void ViewConFile_change_Click(object sender, EventArgs e)
-        {
-            ConfigurationFileManagement.UpdateConfigurationFile(ViewConFile_datas.Text, ViewConFile_database.Text, ViewConFile_name.Text, ViewConFile_passwd.Text);
-        }
     }
 }

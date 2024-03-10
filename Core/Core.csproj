@@ -54,7 +54,9 @@
         <Compile Include="Classes\Client.cs" />
         <Compile Include="Classes\ConfigurationFileManagement.cs" />
         <Compile Include="Classes\DAOs\ClientOrdersDAO.cs" />
+        <Compile Include="Classes\DAOs\DAO.cs" />
         <Compile Include="Classes\DAOs\InsertIntoDatabaseDAO.cs" />
+        <Compile Include="Classes\DAOs\RemoveFromDatabase.cs" />
         <Compile Include="Classes\DatabaseSingleton.cs" />
         <Compile Include="Classes\Order.cs" />
         <Compile Include="Classes\OrderItem.cs" />
