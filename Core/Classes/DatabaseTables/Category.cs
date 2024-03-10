@@ -22,5 +22,10 @@ namespace Core.Classes
             this.title = title;
             this.note = note;
         }
+        
+        public override string ToString()
+        {
+            return $"Category : title = {title}, note = {note}";
+        }
     }
 }

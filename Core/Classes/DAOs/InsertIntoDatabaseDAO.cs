@@ -12,13 +12,11 @@ namespace Core.Classes
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Order_ (number, mark, client_id, record_date) VALUES (@number, @mark, " +
                                                    "(select id from Client where username=@clientUsername), @recordDate)", _connection))
             {
-                
                 cmd.Parameters.AddWithValue("@number", order.Number);
                 cmd.Parameters.AddWithValue("@mark", order.Mark);
                 cmd.Parameters.AddWithValue("@clientUsername", clientUsername);
                 cmd.Parameters.AddWithValue("@recordDate", DateTime.Today);
-                
-                cmd.ExecuteNonQuery();//TODO idk
+                cmd.ExecuteNonQuery();
             }
             return $"{order} was successfully inserted to Client called {clientUsername} :)";
         }

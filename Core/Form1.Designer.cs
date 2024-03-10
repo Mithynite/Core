@@ -98,26 +98,31 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Remove_del_client = new System.Windows.Forms.Button();
             this.Remove_client_cusername = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.import_panel = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.Import_import = new System.Windows.Forms.Button();
+            this.Import_path = new System.Windows.Forms.TextBox();
+            this.edit_panel = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.Edit_category_ntitle = new System.Windows.Forms.TextBox();
+            this.Edit_category_nnote = new System.Windows.Forms.TextBox();
+            this.Edit_category_ctitle = new System.Windows.Forms.TextBox();
+            this.Edit_edit_category = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.Edit_product_nprice = new System.Windows.Forms.TextBox();
+            this.Edit_product_ntag = new System.Windows.Forms.TextBox();
+            this.Edit_edit_product = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Edit_product_ctag = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.Edit_client_nusername = new System.Windows.Forms.TextBox();
+            this.Edit_client_nemail = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.Edit_edit_client = new System.Windows.Forms.Button();
+            this.Edit_client_cusername = new System.Windows.Forms.TextBox();
             this.insert_panel.SuspendLayout();
             this.category_panel.SuspendLayout();
             this.product_panel.SuspendLayout();
@@ -133,10 +138,12 @@
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.import_panel.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.edit_panel.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // close_button
@@ -157,8 +164,8 @@
             // 
             // insert_btn
             // 
-            this.insert_btn.BackColor = System.Drawing.Color.DarkOrange;
-            this.insert_btn.Location = new System.Drawing.Point(11, 52);
+            this.insert_btn.BackColor = System.Drawing.Color.Goldenrod;
+            this.insert_btn.Location = new System.Drawing.Point(11, 11);
             this.insert_btn.Margin = new System.Windows.Forms.Padding(2);
             this.insert_btn.Name = "insert_btn";
             this.insert_btn.Size = new System.Drawing.Size(83, 33);
@@ -170,18 +177,19 @@
             // edit_btn
             // 
             this.edit_btn.BackColor = System.Drawing.Color.Orange;
-            this.edit_btn.Location = new System.Drawing.Point(11, 114);
+            this.edit_btn.Location = new System.Drawing.Point(11, 62);
             this.edit_btn.Margin = new System.Windows.Forms.Padding(2);
             this.edit_btn.Name = "edit_btn";
             this.edit_btn.Size = new System.Drawing.Size(83, 33);
             this.edit_btn.TabIndex = 2;
             this.edit_btn.Text = "Edit";
             this.edit_btn.UseVisualStyleBackColor = false;
+            this.edit_btn.Click += new System.EventHandler(this.edit_btn_Click);
             // 
             // remove_btn
             // 
             this.remove_btn.BackColor = System.Drawing.Color.DarkOrange;
-            this.remove_btn.Location = new System.Drawing.Point(11, 179);
+            this.remove_btn.Location = new System.Drawing.Point(13, 112);
             this.remove_btn.Margin = new System.Windows.Forms.Padding(2);
             this.remove_btn.Name = "remove_btn";
             this.remove_btn.Size = new System.Drawing.Size(83, 33);
@@ -193,13 +201,14 @@
             // import_btn
             // 
             this.import_btn.BackColor = System.Drawing.Color.Gold;
-            this.import_btn.Location = new System.Drawing.Point(11, 239);
+            this.import_btn.Location = new System.Drawing.Point(13, 280);
             this.import_btn.Margin = new System.Windows.Forms.Padding(2);
             this.import_btn.Name = "import_btn";
             this.import_btn.Size = new System.Drawing.Size(83, 33);
             this.import_btn.TabIndex = 4;
             this.import_btn.Text = "Import Data";
             this.import_btn.UseVisualStyleBackColor = false;
+            this.import_btn.Click += new System.EventHandler(this.import_btn_Click);
             // 
             // output_txt
             // 
@@ -207,18 +216,18 @@
             this.output_txt.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.output_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.output_txt.ForeColor = System.Drawing.Color.Yellow;
-            this.output_txt.Location = new System.Drawing.Point(0, 614);
+            this.output_txt.Location = new System.Drawing.Point(0, 602);
             this.output_txt.Margin = new System.Windows.Forms.Padding(2);
             this.output_txt.Name = "output_txt";
             this.output_txt.ReadOnly = true;
-            this.output_txt.Size = new System.Drawing.Size(1383, 241);
+            this.output_txt.Size = new System.Drawing.Size(1383, 197);
             this.output_txt.TabIndex = 5;
             this.output_txt.Text = "";
             // 
             // view_btn
             // 
-            this.view_btn.BackColor = System.Drawing.Color.Goldenrod;
-            this.view_btn.Location = new System.Drawing.Point(11, 302);
+            this.view_btn.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.view_btn.Location = new System.Drawing.Point(13, 167);
             this.view_btn.Margin = new System.Windows.Forms.Padding(2);
             this.view_btn.Name = "view_btn";
             this.view_btn.Size = new System.Drawing.Size(83, 33);
@@ -566,16 +575,16 @@
             this.see_panel.Controls.Add(this.panel2);
             this.see_panel.Controls.Add(this.label3);
             this.see_panel.Controls.Add(this.panel1);
-            this.see_panel.Location = new System.Drawing.Point(763, 331);
+            this.see_panel.Location = new System.Drawing.Point(848, 326);
             this.see_panel.Margin = new System.Windows.Forms.Padding(2);
             this.see_panel.Name = "see_panel";
-            this.see_panel.Size = new System.Drawing.Size(258, 265);
+            this.see_panel.Size = new System.Drawing.Size(258, 268);
             this.see_panel.TabIndex = 9;
             this.see_panel.Visible = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel2.BackColor = System.Drawing.Color.Chocolate;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.SeeData_show_poo);
             this.panel2.Controls.Add(this.SeeData_poo_onumber);
@@ -623,16 +632,16 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(17, 0);
+            this.label3.Location = new System.Drawing.Point(2, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 33);
+            this.label3.Size = new System.Drawing.Size(245, 33);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Let\'s see the Data!";
+            this.label3.Text = "Let\'s check the Data!";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel1.BackColor = System.Drawing.Color.Chocolate;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.SeeData_show_co);
             this.panel1.Controls.Add(this.SeeData_co_cusername);
@@ -678,8 +687,8 @@
             // 
             // see_btn
             // 
-            this.see_btn.BackColor = System.Drawing.Color.Gold;
-            this.see_btn.Location = new System.Drawing.Point(11, 365);
+            this.see_btn.BackColor = System.Drawing.Color.Chocolate;
+            this.see_btn.Location = new System.Drawing.Point(13, 219);
             this.see_btn.Margin = new System.Windows.Forms.Padding(2);
             this.see_btn.Name = "see_btn";
             this.see_btn.Size = new System.Drawing.Size(83, 33);
@@ -692,10 +701,10 @@
             // 
             this.config_panel.Controls.Add(this.label7);
             this.config_panel.Controls.Add(this.panel5);
-            this.config_panel.Location = new System.Drawing.Point(1084, 331);
+            this.config_panel.Location = new System.Drawing.Point(1112, 326);
             this.config_panel.Margin = new System.Windows.Forms.Padding(2);
             this.config_panel.Name = "config_panel";
-            this.config_panel.Size = new System.Drawing.Size(243, 265);
+            this.config_panel.Size = new System.Drawing.Size(243, 268);
             this.config_panel.TabIndex = 12;
             this.config_panel.Visible = false;
             // 
@@ -784,7 +793,7 @@
             this.remove_panel.Controls.Add(this.panel4);
             this.remove_panel.Controls.Add(this.label8);
             this.remove_panel.Controls.Add(this.panel6);
-            this.remove_panel.Location = new System.Drawing.Point(862, 26);
+            this.remove_panel.Location = new System.Drawing.Point(869, 26);
             this.remove_panel.Margin = new System.Windows.Forms.Padding(2);
             this.remove_panel.Name = "remove_panel";
             this.remove_panel.Size = new System.Drawing.Size(399, 274);
@@ -793,7 +802,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel7.BackColor = System.Drawing.Color.DarkOrange;
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.Remove_del_order);
             this.panel7.Controls.Add(this.Remove_order_onumber);
@@ -839,7 +848,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel4.BackColor = System.Drawing.Color.DarkOrange;
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.Remove_del_product);
             this.panel4.Controls.Add(this.Remove_product_ptag);
@@ -896,7 +905,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel6.BackColor = System.Drawing.Color.DarkOrange;
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.Remove_del_client);
             this.panel6.Controls.Add(this.Remove_client_cusername);
@@ -940,32 +949,190 @@
             this.Remove_client_cusername.Text = "client username";
             this.Remove_client_cusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel3
+            // import_panel
             // 
-            this.panel3.Controls.Add(this.panel11);
-            this.panel3.Controls.Add(this.panel9);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.panel10);
-            this.panel3.Location = new System.Drawing.Point(125, 331);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(591, 268);
-            this.panel3.TabIndex = 13;
-            this.panel3.Visible = false;
+            this.import_panel.Controls.Add(this.label11);
+            this.import_panel.Controls.Add(this.panel8);
+            this.import_panel.Location = new System.Drawing.Point(11, 366);
+            this.import_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.import_panel.Name = "import_panel";
+            this.import_panel.Size = new System.Drawing.Size(221, 175);
+            this.import_panel.TabIndex = 13;
+            this.import_panel.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(217, 28);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Import JSON file!";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Gold;
+            this.panel8.Controls.Add(this.Import_import);
+            this.panel8.Controls.Add(this.Import_path);
+            this.panel8.Location = new System.Drawing.Point(2, 35);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(219, 140);
+            this.panel8.TabIndex = 0;
+            // 
+            // Import_import
+            // 
+            this.Import_import.BackColor = System.Drawing.Color.Maroon;
+            this.Import_import.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Import_import.Location = new System.Drawing.Point(65, 77);
+            this.Import_import.Margin = new System.Windows.Forms.Padding(2);
+            this.Import_import.Name = "Import_import";
+            this.Import_import.Size = new System.Drawing.Size(88, 32);
+            this.Import_import.TabIndex = 9;
+            this.Import_import.Text = "Import";
+            this.Import_import.UseVisualStyleBackColor = false;
+            this.Import_import.Click += new System.EventHandler(this.Import_import_Click);
+            // 
+            // Import_path
+            // 
+            this.Import_path.Location = new System.Drawing.Point(35, 39);
+            this.Import_path.Margin = new System.Windows.Forms.Padding(2);
+            this.Import_path.Name = "Import_path";
+            this.Import_path.Size = new System.Drawing.Size(154, 20);
+            this.Import_path.TabIndex = 9;
+            this.Import_path.Text = "path to file";
+            this.Import_path.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // edit_panel
+            // 
+            this.edit_panel.Controls.Add(this.panel11);
+            this.edit_panel.Controls.Add(this.panel9);
+            this.edit_panel.Controls.Add(this.label13);
+            this.edit_panel.Controls.Add(this.panel10);
+            this.edit_panel.Location = new System.Drawing.Point(236, 326);
+            this.edit_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.edit_panel.Name = "edit_panel";
+            this.edit_panel.Size = new System.Drawing.Size(591, 268);
+            this.edit_panel.TabIndex = 13;
+            this.edit_panel.Visible = false;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Orange;
+            this.panel11.Controls.Add(this.Edit_category_ntitle);
+            this.panel11.Controls.Add(this.Edit_category_nnote);
+            this.panel11.Controls.Add(this.Edit_category_ctitle);
+            this.panel11.Controls.Add(this.Edit_edit_category);
+            this.panel11.Controls.Add(this.label15);
+            this.panel11.Location = new System.Drawing.Point(394, 41);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(195, 225);
+            this.panel11.TabIndex = 12;
+            // 
+            // Edit_category_ntitle
+            // 
+            this.Edit_category_ntitle.Location = new System.Drawing.Point(21, 88);
+            this.Edit_category_ntitle.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_category_ntitle.Name = "Edit_category_ntitle";
+            this.Edit_category_ntitle.Size = new System.Drawing.Size(154, 20);
+            this.Edit_category_ntitle.TabIndex = 14;
+            this.Edit_category_ntitle.Text = "new title";
+            this.Edit_category_ntitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_category_nnote
+            // 
+            this.Edit_category_nnote.Location = new System.Drawing.Point(21, 118);
+            this.Edit_category_nnote.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_category_nnote.Name = "Edit_category_nnote";
+            this.Edit_category_nnote.Size = new System.Drawing.Size(154, 20);
+            this.Edit_category_nnote.TabIndex = 14;
+            this.Edit_category_nnote.Text = "new note (optional)";
+            this.Edit_category_nnote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_category_ctitle
+            // 
+            this.Edit_category_ctitle.Location = new System.Drawing.Point(21, 43);
+            this.Edit_category_ctitle.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_category_ctitle.Name = "Edit_category_ctitle";
+            this.Edit_category_ctitle.Size = new System.Drawing.Size(154, 20);
+            this.Edit_category_ctitle.TabIndex = 14;
+            this.Edit_category_ctitle.Text = "current title (name)";
+            this.Edit_category_ctitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_edit_category
+            // 
+            this.Edit_edit_category.BackColor = System.Drawing.Color.Maroon;
+            this.Edit_edit_category.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Edit_edit_category.Location = new System.Drawing.Point(54, 178);
+            this.Edit_edit_category.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_edit_category.Name = "Edit_edit_category";
+            this.Edit_edit_category.Size = new System.Drawing.Size(88, 32);
+            this.Edit_edit_category.TabIndex = 15;
+            this.Edit_edit_category.Text = "Edit";
+            this.Edit_edit_category.UseVisualStyleBackColor = false;
+            this.Edit_edit_category.Click += new System.EventHandler(this.Edit_edit_category_Click);
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Window;
+            this.label15.Location = new System.Drawing.Point(57, 8);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 25);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "Category";
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel9.Controls.Add(this.textBox7);
-            this.panel9.Controls.Add(this.textBox1);
-            this.panel9.Controls.Add(this.button2);
+            this.panel9.BackColor = System.Drawing.Color.Orange;
+            this.panel9.Controls.Add(this.Edit_product_nprice);
+            this.panel9.Controls.Add(this.Edit_product_ntag);
+            this.panel9.Controls.Add(this.Edit_edit_product);
             this.panel9.Controls.Add(this.label12);
-            this.panel9.Controls.Add(this.textBox2);
+            this.panel9.Controls.Add(this.Edit_product_ctag);
             this.panel9.Location = new System.Drawing.Point(193, 41);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(197, 224);
             this.panel9.TabIndex = 11;
+            // 
+            // Edit_product_nprice
+            // 
+            this.Edit_product_nprice.Location = new System.Drawing.Point(21, 118);
+            this.Edit_product_nprice.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_product_nprice.Name = "Edit_product_nprice";
+            this.Edit_product_nprice.Size = new System.Drawing.Size(154, 20);
+            this.Edit_product_nprice.TabIndex = 16;
+            this.Edit_product_nprice.Text = "new price";
+            this.Edit_product_nprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_product_ntag
+            // 
+            this.Edit_product_ntag.Location = new System.Drawing.Point(21, 88);
+            this.Edit_product_ntag.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_product_ntag.Name = "Edit_product_ntag";
+            this.Edit_product_ntag.Size = new System.Drawing.Size(154, 20);
+            this.Edit_product_ntag.TabIndex = 15;
+            this.Edit_product_ntag.Text = "new tag";
+            this.Edit_product_ntag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_edit_product
+            // 
+            this.Edit_edit_product.BackColor = System.Drawing.Color.Maroon;
+            this.Edit_edit_product.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Edit_edit_product.Location = new System.Drawing.Point(54, 178);
+            this.Edit_edit_product.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_edit_product.Name = "Edit_edit_product";
+            this.Edit_edit_product.Size = new System.Drawing.Size(88, 32);
+            this.Edit_edit_product.TabIndex = 14;
+            this.Edit_edit_product.Text = "Edit";
+            this.Edit_edit_product.UseVisualStyleBackColor = false;
+            this.Edit_edit_product.Click += new System.EventHandler(this.Edit_edit_product_Click);
             // 
             // label12
             // 
@@ -978,15 +1145,15 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "Product";
             // 
-            // textBox2
+            // Edit_product_ctag
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 43);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 20);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "current tag";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Edit_product_ctag.Location = new System.Drawing.Point(23, 43);
+            this.Edit_product_ctag.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_product_ctag.Name = "Edit_product_ctag";
+            this.Edit_product_ctag.Size = new System.Drawing.Size(154, 20);
+            this.Edit_product_ctag.TabIndex = 9;
+            this.Edit_product_ctag.Text = "current tag";
+            this.Edit_product_ctag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -1001,17 +1168,37 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel10.Controls.Add(this.textBox5);
-            this.panel10.Controls.Add(this.textBox4);
+            this.panel10.BackColor = System.Drawing.Color.Orange;
+            this.panel10.Controls.Add(this.Edit_client_nusername);
+            this.panel10.Controls.Add(this.Edit_client_nemail);
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Controls.Add(this.button3);
-            this.panel10.Controls.Add(this.textBox3);
+            this.panel10.Controls.Add(this.Edit_edit_client);
+            this.panel10.Controls.Add(this.Edit_client_cusername);
             this.panel10.Location = new System.Drawing.Point(7, 41);
             this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(182, 224);
             this.panel10.TabIndex = 0;
+            // 
+            // Edit_client_nusername
+            // 
+            this.Edit_client_nusername.Location = new System.Drawing.Point(12, 116);
+            this.Edit_client_nusername.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_client_nusername.Name = "Edit_client_nusername";
+            this.Edit_client_nusername.Size = new System.Drawing.Size(154, 20);
+            this.Edit_client_nusername.TabIndex = 12;
+            this.Edit_client_nusername.Text = "new username";
+            this.Edit_client_nusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Edit_client_nemail
+            // 
+            this.Edit_client_nemail.Location = new System.Drawing.Point(12, 88);
+            this.Edit_client_nemail.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_client_nemail.Name = "Edit_client_nemail";
+            this.Edit_client_nemail.Size = new System.Drawing.Size(154, 20);
+            this.Edit_client_nemail.TabIndex = 11;
+            this.Edit_client_nemail.Text = "new email";
+            this.Edit_client_nemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -1024,154 +1211,37 @@
             this.label14.TabIndex = 10;
             this.label14.Text = "Client";
             // 
-            // button3
+            // Edit_edit_client
             // 
-            this.button3.BackColor = System.Drawing.Color.Maroon;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(41, 179);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 32);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Edit_edit_client.BackColor = System.Drawing.Color.Maroon;
+            this.Edit_edit_client.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Edit_edit_client.Location = new System.Drawing.Point(41, 179);
+            this.Edit_edit_client.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_edit_client.Name = "Edit_edit_client";
+            this.Edit_edit_client.Size = new System.Drawing.Size(88, 32);
+            this.Edit_edit_client.TabIndex = 9;
+            this.Edit_edit_client.Text = "Edit";
+            this.Edit_edit_client.UseVisualStyleBackColor = false;
+            this.Edit_edit_client.Click += new System.EventHandler(this.Edit_edit_client_Click);
             // 
-            // textBox3
+            // Edit_client_cusername
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 43);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 20);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.Text = "current username";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(12, 88);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 20);
-            this.textBox4.TabIndex = 11;
-            this.textBox4.Text = "new email";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(12, 116);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(154, 20);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.Text = "new username";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel11.Controls.Add(this.textBox9);
-            this.panel11.Controls.Add(this.textBox6);
-            this.panel11.Controls.Add(this.textBox8);
-            this.panel11.Controls.Add(this.button4);
-            this.panel11.Controls.Add(this.label15);
-            this.panel11.Location = new System.Drawing.Point(394, 41);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(195, 225);
-            this.panel11.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Window;
-            this.label15.Location = new System.Drawing.Point(57, 8);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 25);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "Category";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(54, 178);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 32);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(54, 179);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 32);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Edit";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(21, 88);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "new tag";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(21, 118);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(154, 20);
-            this.textBox7.TabIndex = 16;
-            this.textBox7.Text = "new price";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(21, 43);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(154, 20);
-            this.textBox8.TabIndex = 14;
-            this.textBox8.Text = "current title (name)";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(21, 118);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 20);
-            this.textBox6.TabIndex = 14;
-            this.textBox6.Text = "new note (optional)";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(21, 88);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(154, 20);
-            this.textBox9.TabIndex = 14;
-            this.textBox9.Text = "new title";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Edit_client_cusername.Location = new System.Drawing.Point(12, 43);
+            this.Edit_client_cusername.Margin = new System.Windows.Forms.Padding(2);
+            this.Edit_client_cusername.Name = "Edit_client_cusername";
+            this.Edit_client_cusername.Size = new System.Drawing.Size(154, 20);
+            this.Edit_client_cusername.TabIndex = 9;
+            this.Edit_client_cusername.Text = "current username";
+            this.Edit_client_cusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1383, 855);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1383, 799);
+            this.Controls.Add(this.import_panel);
+            this.Controls.Add(this.edit_panel);
             this.Controls.Add(this.remove_panel);
             this.Controls.Add(this.config_panel);
             this.Controls.Add(this.see_panel);
@@ -1215,44 +1285,53 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.import_panel.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.edit_panel.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel import_panel;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button Import_import;
+        private System.Windows.Forms.TextBox Import_path;
 
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Edit_category_ntitle;
 
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Edit_category_nnote;
 
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Edit_category_ctitle;
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Edit_product_nprice;
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox Edit_product_ntag;
+
+        private System.Windows.Forms.Button Edit_edit_product;
+        private System.Windows.Forms.Button Edit_edit_category;
 
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label15;
 
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Edit_client_nemail;
+        private System.Windows.Forms.TextBox Edit_client_nusername;
 
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel edit_panel;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Edit_product_ctag;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button Edit_edit_client;
+        private System.Windows.Forms.TextBox Edit_client_cusername;
 
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label10;

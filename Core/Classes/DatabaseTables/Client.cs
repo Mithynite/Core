@@ -22,5 +22,10 @@ namespace Core.Classes
             this.email = email;
             this.username = username;
         }
+
+        public override string ToString()
+        {
+            return $"Client : username = {username}, email = {email}";
+        }
     }
 }

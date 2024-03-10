@@ -18,12 +18,5 @@ namespace Core.Classes.DAOs
                 Console.WriteLine($"There was an Error while connecting to database: {ex}");
             }
         }
-
-        public bool CanBeParsedToInt(string val)
-        {
-            int number;
-            return int.TryParse(val, out number);
-        }
-        
     }
 }

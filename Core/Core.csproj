@@ -33,6 +33,9 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Configuration" />
         <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -50,18 +53,20 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Classes\Category.cs" />
-        <Compile Include="Classes\Client.cs" />
         <Compile Include="Classes\ConfigurationFileManagement.cs" />
         <Compile Include="Classes\DAOs\ClientOrdersDAO.cs" />
         <Compile Include="Classes\DAOs\DAO.cs" />
+        <Compile Include="Classes\DAOs\EditDatabaseDAO.cs" />
         <Compile Include="Classes\DAOs\InsertIntoDatabaseDAO.cs" />
-        <Compile Include="Classes\DAOs\RemoveFromDatabase.cs" />
+        <Compile Include="Classes\DAOs\RemoveFromDatabaseDAO.cs" />
         <Compile Include="Classes\DatabaseSingleton.cs" />
-        <Compile Include="Classes\Order.cs" />
-        <Compile Include="Classes\OrderItem.cs" />
-        <Compile Include="Classes\Product.cs" />
-        <Compile Include="Classes\StandardTable.cs" />
+        <Compile Include="Classes\DatabaseTables\Category.cs" />
+        <Compile Include="Classes\DatabaseTables\Client.cs" />
+        <Compile Include="Classes\DatabaseTables\Order.cs" />
+        <Compile Include="Classes\DatabaseTables\OrderItem.cs" />
+        <Compile Include="Classes\DatabaseTables\Product.cs" />
+        <Compile Include="Classes\DatabaseTables\StandardTable.cs" />
+        <Compile Include="Classes\JSONManager.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>

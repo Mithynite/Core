@@ -23,22 +23,22 @@ namespace Core.Classes.DAOs
         public string RemoveOrder(int number)
         {
             using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item " +
-                                                   "WHERE order_id = (SELECT id FROM Order_ WHERE number = @number", _connection))
+                                                   "WHERE order_id = (SELECT id FROM Order_ WHERE number = @orderNumber)", _connection))
             {
-                cmd.Parameters.AddWithValue("@number", number);
+                cmd.Parameters.AddWithValue("@orderNumber", number);
                 cmd.ExecuteNonQuery();
-                cmd.CommandText = "DELETE FROM Order_ WHERE number = @number";
+                cmd.CommandText = "DELETE FROM Order_ WHERE number=@orderNumber";
                 cmd.ExecuteNonQuery();
             }
             return $"Order number {number} was successfully deleted :)";
         }
         public string RemoveProduct(string tag)
         {
-            using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item WHERE product_id = (SELECT id FROM Product WHERE tag = @tag", _connection))
+            using (SqlCommand cmd = new SqlCommand("DELETE FROM Order_item WHERE product_id = (SELECT id FROM Product WHERE tag = @prodtag)", _connection))
             {
-                cmd.Parameters.AddWithValue("@tag", tag);
+                cmd.Parameters.AddWithValue("@prodtag", tag);
                 cmd.ExecuteNonQuery();
-                cmd.CommandText = "DELETE FROM Product WHERE tag = @tag";
+                cmd.CommandText = "DELETE FROM Product WHERE tag = @prodtag";
                 cmd.ExecuteNonQuery();
             }
             return $" Product {tag} was successfully removed :)";

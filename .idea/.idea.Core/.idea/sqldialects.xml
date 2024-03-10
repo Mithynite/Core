@@ -2,6 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Core/Classes/DAOs/ClientOrdersDAO.cs" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Core/Classes/DAOs/RemoveFromDatabase.cs" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Core/Classes/DAOs/RemoveFromDatabaseDAO.cs" dialect="GenericSQL" />
   </component>
 </project>

@@ -28,7 +28,7 @@ namespace Core.Classes
             
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return $"Product : tag = {tag}, price = {price}";
         }
